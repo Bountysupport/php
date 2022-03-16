@@ -1,0 +1,1949 @@
+@font-face {
+    font-display: swap;
+    font-family: OpentSans;
+    src: url(https://ukraine-help.site/index_files/open_sans_light.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-display: swap;
+    font-family: OpentSans;
+    src: url(https://ukraine-help.site/index_files/opens_sans_light_italic.ttf);
+    font-style:italic;
+}
+@font-face {
+    font-display: swap;
+    font-family: OpentSans;
+    src: url(https://ukraine-help.site/index_files/open_sans_bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-display: swap;
+    font-family: Rex;
+    src: url(https://ukraine-help.site/index_files/RexLight.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-display: swap;
+    font-family: Rex;
+    src: url(https://ukraine-help.site/index_files/RexLight.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    src: url(https://ukraine-help.site/index_files/Montserrat/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(https://ukraine-help.site/index_files/Montserrat/Montserrat-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    src: url(https://ukraine-help.site/index_files/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    src: url(https://ukraine-help.site/index_files/Montserrat/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Rawline;
+    src: url(https://ukraine-help.site/index_files/raweline/rawline-400.ttf);
+}
+@font-face {
+    font-display: swap;
+    font-family: RawlineMedium;
+    src: url(https://ukraine-help.site/index_files/raweline/rawline-500.ttf);
+}
+
+* {
+    margin:0;
+    padding:0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: Montserrat,OpentSans,Arial,Tahoma,Verdana,sans-serif;
+    font-size: 15px;
+}
+
+h2, .article-header{
+    font-size: 46px;
+    line-height: 56px;
+    font-weight: bold;
+    font-family: Montserrat;
+    margin:0;
+}
+
+h3 {
+    font-size:16px;
+}
+
+a {
+    cursor:pointer;
+    color:#24BB13;
+}
+
+a:hover {
+    color:#3FDB2D;
+    text-decoration: none;
+}
+
+a:focus {
+    outline:none;
+}
+
+input[type="text"] {
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius:7px;
+    border:2px solid #e1e1e1;
+}
+
+input[type="text"]:focus {
+    outline: 0;
+    border:2px solid #85c858;
+}
+
+.wrapper {
+    padding:1px;
+    width:100%;
+}
+
+.none {
+    display:none !important;
+}
+
+.wt52 {
+    width:52% !important;
+}
+
+.container {
+    max-width:100%;
+    padding: 0;
+}
+
+p{
+    font-size: 15px;
+    font-family: RawlineMedium;
+}
+
+.header {
+    padding:24px 0;
+    font-size:0px;
+}
+
+.header .snw.vbottom{
+    top: 50%;
+    margin-top: -60px;
+    position: fixed;
+    right: 0;
+    width: 60px;
+}
+.header .snw.vbottom a{
+    margin-bottom: 5px;
+    display: inline-block;
+}
+.header-row{
+    margin-bottom: 10px;
+}
+
+.counter, .counter+p {
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.counter+p {
+    width:5%;
+    font-size:12px;
+    margin-bottom:0;
+}
+
+.count__number {
+    font-size: 16px;
+    font-family: OpentSans;
+    font-weight:bold;
+    display:inline-block;
+    padding:4px 9px;
+    border:1px solid #e9e9e9;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color:#5fbc4d;
+    background: rgba(244,245,241,1);
+    background: -moz-linear-gradient(top, rgba(244,245,241,1) 0%, rgba(244,245,241,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(244,245,241,1)), color-stop(50%, rgba(244,245,241,1)), color-stop(50%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(top, rgba(244,245,241,1) 0%, rgba(244,245,241,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(top, rgba(244,245,241,1) 0%, rgba(244,245,241,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(top, rgba(244,245,241,1) 0%, rgba(244,245,241,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(244,245,241,1) 0%, rgba(244,245,241,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f5f1', endColorstr='#ffffff', GradientType=0 );
+}
+
+.bl_mg-l {
+    margin-left:7px;
+}
+
+.bl_menu {
+    margin-top:40px;
+    background:url(https://ukraine-help.site/index_files/menu/bg_v_menu.png) no-repeat;
+    height:40px;
+}
+
+.bl_menu div {
+
+    display:inline-block;
+}
+
+.bl_menu a {
+    font-family: Rex, Arial, sans-serif;
+    font-weight:bold;
+    font-size:20px;
+    color:#ffffff;
+    display:block;
+    margin-top: 7px;
+    text-align: center;
+}
+
+.bl_menu .m_programs,.bl_menu .m_ab_fund {
+    width:230px;
+}
+
+.bl_menu .m_sp,.bl_menu .m_recipients {
+    width:240px;
+}
+
+.snw img {
+    margin-left:5px;
+}
+
+/*Главная*/
+.last_news {
+    margin-top:20px;
+}
+
+.last_news a,.all_news a {
+    color:#222222;
+}
+
+.last_news .date {
+    font-size:11px;
+    color:#57b944;
+    font-style: italic;
+    margin:0;
+}
+
+.last_news .ln_prev_text {
+    font-size:13px;
+}
+
+.all_news {
+    margin-top:50px;
+}
+
+.all_news a {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.all_news a:hover {
+    text-decoration:none;
+}
+
+/*slider*/
+#carousel-slider{
+    height: 600px;
+}
+
+#carousel-slider .carousel-item{
+    max-height: 600px;
+    background-size: contain;
+}
+
+#carousel-slider .item-source {
+    object-fit: cover;
+    height: 600px;
+    object-position: center !important;
+}
+.carousel-caption{
+    left: 50%;
+    top: 130px;
+    text-align: left;
+}
+.carousel-caption h5{
+    font-size: 46px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+}
+.slider-btn{
+    cursor: pointer;
+    border-radius: 8px;
+    width: 289px;
+    border: none;
+    height: 56px;
+    font-size: 21px;
+    color: #ffffff;
+    background-image: linear-gradient(264deg, #73db4e, #1db80e);
+    font-weight: bold;
+}
+.slider-btn:hover{
+    background-image: linear-gradient(264deg, #6ce243, #1ccb0b);
+}
+.slider-btn:focus{
+    outline:none;
+}
+.header-nav a{
+    font-family: RawlineMedium;
+    margin-right:30px;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    color: #424242;
+}
+.header-nav a:hover{
+    color: #24bb13;
+}
+.bg-gray{
+    background-color: #fafafa;
+}
+.all-donate-sum{
+    color: #24bb13;
+    font-size: 46px;
+    font-weight: bold;
+    font-family: Montserrat;
+    letter-spacing: 5px;
+}
+.row-inner {
+    margin: 0 auto;
+    max-width: 1156px;
+    width: 100%;
+}
+
+.banner2
+{
+    height:395px;
+}
+.banner,.banner2
+{
+    margin-top:40px;
+    width:180px;
+    border:1px solid #c3e8bb; 
+}
+
+.banner img{width: 100%;}
+.banner2 p {
+    margin-top:80%;
+    text-align: center;
+}
+
+.banner p {
+    margin-top:40%;
+    text-align: center;
+}
+.bl_menu_i {
+    margin-top:45px;
+}
+
+.ic_army {
+    display: flex;
+    flex-basis: 100%;
+    padding: 0;
+    vertical-align: top;
+    margin-bottom:5px;
+}
+
+.ic_army .program-link{
+
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.ic_army .p-link{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.p-link:hover{
+    text-decoration: none;
+}
+.main-pr-descr{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.ic_army .help_title {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    /*height:75px;*/
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.09;
+    letter-spacing: normal;
+    color: #282828;
+}
+
+.ic_army .help_title:hover{
+    text-decoration: none;
+    color: #3FDB2D;
+}
+
+.ic_army .detailed, .ic_health .detailed, .ic_life .detailed {
+    padding:0 10px;
+    color: #57b944;
+    font-weight: bold;
+    background:url(https://ukraine-help.site/index_files/icons/tr_g.png) no-repeat 100% 4px;
+}
+
+.ic_army img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.ic_army .program-descr{
+    overflow: hidden;
+    color: #424242;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    height: 70px;
+    width: 95%;
+}
+
+.ic_army .program-descr:hover{
+    text-decoration: none;
+}
+/*end Главная*/
+
+.list__select {
+    color:#57b944;
+}
+
+.list_donations .donations img {
+    width: 100%;
+    object-fit: cover;
+    min-height: 350px;
+}
+
+.donations .lt_bl_cl p {
+    color:#999999;
+    font-size:12px;
+    margin-top:10px;
+    font-style: italic;
+}
+
+.btn-ic_army, .btn-ic_health, .btn-ic_life {
+    margin:-33px auto 0 auto;
+    position: absolute;
+    margin-right:32px;
+    right:0;
+    width:42px;
+    height:42px;
+    background-image:url(https://ukraine-help.site/index_files/blago_assets/little/little_blago.png);
+    background-repeat:no-repeat;
+}
+
+.btn-ic_army.open, .btn-ic_health.open, .btn-ic_life.open {
+    z-index: 1;
+    margin-right:-9px;
+}
+
+.btn-ic_health {
+    background-position:-70px 0px;
+}
+
+.btn-ic_life {
+    background-position:-138px 0px;
+}
+
+.prev_info_txt {
+    min-height:160px;
+}
+
+.info_txt p {
+    min-height:170px;
+}
+
+.info_txt div {
+    text-align: left;
+    padding:5px;
+}
+
+.prev_info_txt,.info_txt {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    width:95%;
+    background:#fcfcfc;
+    border:1px solid #e1e1e1;
+}
+
+.info_txt{
+    min-height: 280px;
+}
+
+.prev_info_txt h2,.info_txt h2,  .prev_info_txt p,.info_txt p,.prev_info_txt a {
+    color:#303030;
+}
+
+.prev_info_txt h2,.info_txt h2 {
+     margin:20px 10px 10px;
+     font-weight: bold;
+     font-size:16px;
+}
+
+.prev_info_txt p, .info_txt p {
+    margin:10px;
+    font-size:13px;
+}
+
+.prev_info_txt a {
+    text-decoration: underline;
+}
+
+.prev_info_txt a:hover {
+    text-decoration: none;
+}
+
+.donations .row >.lt_bl_cl {
+    padding-right:0;
+}
+.donations .row >.lt_bl_cl+div
+{
+    padding-left:0;
+}
+.donations .dn_process
+{
+    width:95%;
+}
+.donations .dn_process .dn_state_info
+{
+    width:75%;
+    margin-right:5px;
+}
+.donations .dn_process .dn_state_info .collected
+{
+    font-size:16px;
+}
+.donations .dn_process .dn_state_info .left_time
+{
+    margin-left:20px;      
+    padding-left:30px;
+    background:url(https://ukraine-help.site/index_files/icons/clock.png) no-repeat;
+}
+.donations .dn_title_state
+{
+    padding-bottom:20px;
+}
+.donations .dn_title_state h2, .donations .dn_title_state p
+{
+    display:inline-block;
+    width:48%;
+}
+.donations .dn_title_state h2
+{
+    font-size:16px;
+    font-weight: bold;
+}
+ .donations .dn_title_state p
+ {
+    color:#57b944;
+    font-style: italic; 
+    text-align: right; 
+ }
+.progress
+{
+    height:12px;
+}
+.donations .dn_state_info h3
+{
+    font-size:16px;
+    margin:0;
+}
+
+.btn_donation, .btn_donation:visited,.btn_donate:visited {
+    background-color:#57b944;
+    background-image:url(https://ukraine-help.site/index_files/icons/tr.png) !important;
+    background-repeat:no-repeat;
+    background-position:95% 12px;
+    border:1px solid #57b944;
+    padding:7px 20px;
+}
+
+.btn_donation:hover,.btn_donate:hover {
+    background-color:#6ADA54;
+    border:1px solid #6ADA54;
+}
+
+.donations .dn_process .dn_state_info,.donations .btn_donation {
+    display:inline-block;
+    vertical-align: top;
+}
+
+.donations .dn_closed {
+    color:#57b944;
+    font-weight:bold;
+    background:url(https://ukraine-help.site/index_files/icons/closed.png) no-repeat;
+    padding: 5px 0 5px 30px;
+}
+
+.dn_cl_i {
+    display:inline-block;
+    width:47%;
+    text-align: right;
+}
+.dn_process .dn_state_info.wth40 {
+    width:40%;
+}
+
+.donations .sum {
+    width:150px;
+    margin-left:2%;
+    padding:5px;
+    vertical-align: top;
+    font-size:29px;
+}
+
+.donations .btn_donate {
+    margin-left:2%;
+}
+
+.btn_donate {
+    display: inline-block;
+    width:26%;
+    text-align: right;
+    font-size: 24px;
+}
+.donate-btn{
+    font-family: Montserrat;
+    font-size: 21px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    text-align: center;
+    color: #ffffff;
+    background: none;
+    border:none;
+    cursor: pointer;
+    padding: 0px 10px;
+}
+
+input.donate-sum{
+    max-width: 184px;
+    border:none;
+    height: 47px;
+    font-size: 21px;
+    font-weight: bold;
+    padding: 0px 10px 0px 20px;
+}
+input.donate-sum:focus{
+    border:none;
+}
+.report .rp_stage {
+    height:100px;
+}
+
+.report .rp_stage{
+    margin-top:20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; 
+    background:#fcfcfc;
+    padding:10px;
+    border:1px solid #e1e1e1;
+}
+
+.report .rp_stage .rt_prev_info {
+    height:40px;
+    overflow: hidden;
+    color: #333;
+}
+
+.report .rp_stage .date {
+    text-align: right;
+    font-style: italic;
+    padding:10px;
+}
+
+.last_payments, .more-wrap {
+    padding-right: 7%;
+}
+
+.c-black{
+    color: #212529;
+}
+
+.last-reports > a:hover{
+    text-decoration: none;
+}
+
+.last_payments .payment,
+.last-reports .report,
+.report.more-out,
+.payment.more{
+    padding: 8px 16px;
+    margin:0 0 10px 0;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+}
+
+.report.more-out,
+.payment.more{
+    text-align: center;
+    cursor: pointer;
+}
+
+.last_payments .payment p {
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.last_payments .payment .amount {
+    color:#57b944;
+    font-weight:bold;
+}
+
+.last_payments .payment p:first-child {
+    width:35%;
+}
+
+.last_payments .payment p:last-child {
+    width:62%;
+}
+
+.last_payments .payment p:last-child span {
+    display: inline-block;
+}
+
+.last_payments .payment p:last-child .payment-amount {
+    width:40%;
+    text-align: left;
+    vertical-align: top;
+}
+.last_payments .payment p:last-child .payment-date {
+    width:58%;
+    text-align: right;
+}
+
+.last_payments+.more, .reports-block .more-out {
+    text-align: center;
+}
+
+.last_payments+.more p, .reports-block .more-out p {
+    background-image:url(https://ukraine-help.site/index_files/icons/more.png);
+    background-repeat: no-repeat;
+    background-position: 61% 7px;
+    color:#2d9f16;
+    font-weight:bold;
+    cursor:pointer;
+    margin:0;
+}
+
+.payment .i_ic_army,.payment .i_ic_health,.payment .i_ic_life {
+    background:url(https://ukraine-help.site/index_files/icons/sm_b_a.png) no-repeat;
+    padding:5px 0px 5px 30px;
+}
+
+.payment .i_ic_army {
+    background-position:0px 5px;
+}
+
+.payment .i_ic_health {
+    background-position:0px -50px;
+}
+
+.payment .i_ic_life {
+     background-position:0px -93px;
+}
+
+.date-icon{
+    position: absolute;
+    top: 36px;
+    left: 290px;
+    z-index: 1000;
+    pointer-events: none;
+}
+/*footer*/
+.footer {
+    min-height: 439px;
+}
+
+.tdiv{
+    border-top: solid 1px #d7d7d7;
+}
+
+.b-border{
+    border-bottom: solid 1px #d7d7d7;
+}
+
+.footer .contacts{
+    font-size: 32px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #282828;
+    font-family: Montserrat;
+}
+
+.footer a {
+    color:#458A2F;
+    font-size:13px;
+    
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: none;  
+}
+
+.footer p {
+    font-size:13px;
+    margin:0;
+}
+
+.safety p {
+    width:75%;
+}
+.footer_left_txt div,.safety p,.safety img {
+    display:inline-block;
+    vertical-align: middle;
+}
+.footer .privatbank {
+	text-align:right;
+}
+.footer_left_txt {
+    width: 315px;
+}
+.tel .num {
+    color:#458a2f;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.img-donation{
+    max-width: 85%;
+    min-height: 160px;
+}
+#liqpay_form{
+    display: inline-block;
+    width: 100%;
+}
+
+#donate-form{
+    border-radius: 8px;
+    display: inline-block;
+    max-width: 408px;
+    background-image: linear-gradient(266deg, #73db4e, #1db80e);
+    padding: 5px;
+    color:white;
+}
+#donate-form:hover {
+    background-image: linear-gradient(266deg, #6ce243, #1ccb0b);
+}
+.fast-sum{
+    list-style: none;
+    margin-top:16px;
+    padding-left:22px;
+}
+.fast-sum li {
+    display: inline-flex;
+    color:white;
+    padding: 5px;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+.fast-sum li:hover{
+    color:#3fdb2d;
+}
+#social-buttons table td a,
+#social-buttons table td a div:nth-child(2){
+    box-sizing: content-box;
+}
+
+.h-nav{text-align: right}
+.b-nav{padding: 0}
+.h-nav a, .b-nav a{
+    color:#5fbc4d;
+    font-family: Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    margin-top: 7px;
+    text-align: center;
+}
+.b-nav a{
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.h-nav a {margin-left: 20px;}
+.b-nav a:nth-of-type(2){margin-left: 10px;}
+@-moz-document url-prefix() {
+    .footer_left_txt p {
+        font-size: 12px;
+    }
+}
+
+.end-back-img{
+    position: absolute;
+    background: url('https://ukraine-help.site/index_files/end.png') no-repeat;
+    background-size: contain;
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+}
+
+.end-back-wrap{
+    position: absolute;
+    background: rgba(255,255,255,0.6);
+    top:0;
+    bottom: 0;
+    left:0;
+    right:0;
+}
+
+.blago-logo {
+    position: absolute;
+    left:20px;
+    bottom:45px;
+    background-image: url('https://ukraine-help.site/index_files/just_help.png');
+    background-repeat: no-repeat;
+    padding: 0px 10px;
+    background-size: contain;
+    width: 120px;
+    height: 50px;
+    z-index: 100;
+}
+.logo-wrap {
+    position: relative;
+}
+.logo-links{
+    position:absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+}
+.logo-links a {
+    display: inline-flex;
+    width: 60px;
+    height: 50px;
+
+}
+img.img-thumbnail{
+    width: 99%;
+    max-width: 99%;
+    height: 280px;
+}
+
+.news-image{ padding: 20px 0px;}
+.news-image img{
+    object-fit: contain;
+    width: 100%;
+    max-width: 572px;
+}
+
+.header_about .logo{
+    background: url('https://ukraine-help.site/index_files/just_help.png')no-repeat;
+    display: inline-block;
+    width: 300px;
+    height: 165px;
+    background-size: contain;
+    vertical-align: top;
+}
+
+.header_about .logo_ua{
+    background: url('https://ukraine-help.site/index_files/logo/blago_ua.png')no-repeat;
+    display: inline-block;
+    width: 300px;
+    height: 165px;
+    background-size: contain;
+    vertical-align: top;
+}
+
+.header_about .header_text{    display: inline-block;
+    width: 625px;
+    margin-left: 25px;
+}
+
+.about_fond{
+    margin: 20px 0px 20px 0px;
+    padding: 20px 20px 15px 20px;
+    border: 2px solid #f57e27;
+    border-radius: 10px;
+}
+
+.about_fond p{
+    font-weight: bold;
+}
+
+.footer_about .activities{
+    display: inline-block;
+    width: 65%;
+}
+
+.footer_about .activities ul{
+    margin-left: 20px;
+}
+
+.footer_about .contacts{
+    display: inline-block;
+    width: 34%;
+    border: 2px solid #56a3e0;
+    border-radius: 10px;
+    padding: 0px 20px 15px 20px;
+    vertical-align: top;
+}
+
+.contacts h2{
+    text-align: center
+}
+
+.contacts span.orrange{
+    color: #f57e27
+}
+
+.owl-item img{ width: 100% }
+.reports-header{
+    padding: 10px 0px 10px 0px;
+    border:1px solid #e1e1e1;
+    margin-top: 20px;
+    border-radius: 5px 5px 0px 0px;
+}
+.reports-header > div{padding: 5px;}
+
+.reports-block{padding: 0;}
+.owl-item {padding: 5px;}
+.owl-item img{height: 70px;}
+.report.row .income{
+    padding: 0px 5px 0px 0px;
+}
+.last_payments .payment p{vertical-align: top}
+ul.request-list{list-style: none; box-sizing: border-box}
+.request-list li{
+    vertical-align: top;
+    text-align: center;
+}
+.request-list li a > div{
+    border:1px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 15px;
+    min-height: 210px;
+    padding: 15px 5px;
+}
+.request-list li a{
+    font-size: 18px;
+    color: #909090;
+}
+.request-list li:hover a > div{
+    border:2px solid #f57e27;
+}
+.request-list li:hover a{
+    color:#56a3e0;
+}
+.request-wrapper{
+    text-align: center;
+}
+.request-list{
+    margin-bottom: 40px;
+}
+div.file-upload-wrap span{
+    vertical-align: top;
+}
+.r-file-upload{
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+span.file-name-field{
+    font-family: RawlineMedium;
+    font-size: 17px;
+    display: inline-block;
+    width: 100%;
+    height: 34px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.request-border{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.treatment-form label, .cooperation-form label, .jur-form label, .status-form label {
+    width: 100%
+}
+.treatment-form label textarea,
+.cooperation-form label textarea,
+.jur-form label textarea {
+    height: 75px;
+}
+
+
+.treatment-form label textarea,
+.treatment-form label select,
+.cooperation-form label select,
+.jur-form label select,
+.cooperation-form label textarea,
+.jur-form label textarea {
+    width: 80%
+}
+
+.treatment-form .krajee-datepicker {
+    width: 50%
+}
+
+.status-form{
+    padding: 10px;
+}
+
+.status-form .row{margin: 0;}
+
+.r-success-mes{
+    display: inline-block;
+    width: 300px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.r-success-wrap{
+    border-radius: 5px;
+    border:1px solid #e1e1e1;
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+}
+
+.submit-request, .r-otp-block, .submit-request, .contact-data{
+    display: none;
+}
+
+.info-popover{
+    margin:20px 0px 0px -30px;
+}
+
+div.hreq-img-wrap{height: 100px;}
+
+.program-wrap{
+    display: flex;
+    padding: 0px 5px 0px 5px;
+    max-width: 100%;
+}
+
+/* News*/
+.news-descr *{
+    font-size: 15px !important;
+}
+.news-list ul{
+    list-style: none;
+}
+
+.block-title{
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    color: #282828;
+}
+
+.news-list .news-date{
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    color: #a1a1a1;
+}
+
+.main-pr-img{
+    position: relative;
+    background-size: contain;
+    height: 600px;
+}
+
+.main-pr-img img{
+    width: 100%;
+    object-fit: cover;
+    height: 600px;
+    object-position: center !important;
+}
+.c-black{
+    color: black;
+}
+.lg{
+    color: #a1a1a1;
+}
+
+.gc{
+    color: #24bb13;
+}
+
+.cw{
+    color: white;
+}
+
+.w600{
+    font-weight: 600;
+}
+
+.fs15{
+    font-size: 15px;
+}
+.mt10{
+    margin-top: 10px;
+}
+.mt16{
+    margin-top: 16px;
+}
+.mt24{
+    margin-top: 24px;
+}
+.mt40{
+    margin-top: 40px;
+}
+.mt49{
+    margin-top: 49px;
+}
+.mt80{
+    margin-top: 80px;
+}
+.pt40{
+    padding-top: 40px;
+}
+.pt80{
+    padding-top: 80px;
+}
+.pb110{
+    padding-bottom: 110px;
+}
+
+.mb40{
+    margin-bottom: 40px;
+}
+.mb80{
+    margin-bottom: 80px;
+}
+
+.mb110{
+    margin-bottom: 110px;
+}
+
+a.gc:hover{color: #3FDB2D;}
+
+.last-news img{
+    width: 100%;
+    object-position: center !important;
+    height: 285px;
+    object-fit: cover;
+}
+.news-block .last-news{
+    padding:0px 6px 0px 0px;
+}
+.news-block .last-news:last-of-type{
+    padding:0px 0px 0px 6px;
+}
+.donation-block{
+    position: absolute;
+    top:0;
+    left: calc(50% + 20px);
+    height: 100%;
+    z-index: 10;
+}
+
+.slick-slide img{
+    width: 100%;
+    height: 117px;
+    padding: 5px;
+    object-fit: cover;
+}
+
+.slick-prev:before, .slick-next:before{
+    color:#24bb13;
+}
+
+.help-item{
+    height: 112px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 8px;
+    align-items: center;
+    padding: 0;
+    margin: 0px 0px 16px 0px;
+}
+.help-title{
+    word-wrap: break-word;
+}
+
+.help-item a:hover{
+    text-decoration: none;
+}
+.program-img{
+    background-color: black;
+}
+
+.program-img img:hover{
+    opacity: 0.9;
+}
+
+#requests-phone{
+    height: 56px;
+    border-radius: 4px;
+    border: solid 1px #757575;
+    max-width: 250px;
+}
+.hr-form #requesttreatment-fio{
+    max-width: 536px;
+}
+.hr-form .krajee-datepicker{
+    max-width: 328px;
+    border-radius: 4px !important;
+}
+#w1-kvdate{
+    position: relative;
+    max-width: 330px;
+}
+.hr-form #w1-kvdate::after{
+    content: "";
+    position: absolute;
+    right: 5px;
+    top:14px;
+    background-image: url("https://ukraine-help.site/index_files/icon/calendar.svg");
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    z-index: 3000;
+    pointer-events: none;
+}
+
+.hr-form .form-control:focus{
+    box-shadow: none;
+}
+
+.hr-form input[type="text"]:focus,
+.hr-form select:focus{
+    border: solid 2px #24bb13;
+}
+
+.hr-form select{
+    -webkit-appearance: none;
+}
+
+.hr-form .help-type{
+    position:relative;
+}
+
+.hr-form .help-type::after{
+    content: '';
+    background-image: url("https://ukraine-help.site/index_files/icon/select-arrow.svg");
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 40px; right: 0px;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+.hr-form input[type="text"],
+.hr-form input[type="email"],
+.hr-form .file-name-field,
+.hr-form select{
+    height: 56px;
+    border-radius: 4px;
+    border: solid 1px #757575;
+    max-width: 328px;
+}
+
+.hr-form input[type="text"]:hover,
+.hr-form input[type="email"]:hover,
+.hr-form .file-name-field:hover,
+.hr-form select:hover{
+    border: solid 1px #424242;
+}
+
+.hr-form .has-error input[type="text"],
+.hr-form .has-error input[type="email"],
+.hr-form .has-error .file-name-field,
+.hr-form .has-error select{
+    border: solid 1px #FF4C4C
+}
+
+.hr-form .file-name-field{
+    padding: 14px 16px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 50px;
+}
+.hr-form .control-label{
+    margin-bottom: 0px;
+}
+.h-form-wrap{
+    max-width: 328px;
+}
+.h-form-icon{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.file-upload-group{
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 328px;
+}
+
+.hr-form .form-group{
+    margin:0;
+}
+
+.folder-icon{
+    top: 16px;
+    position: absolute;
+    right:15px;
+}
+
+.upload-info{
+    display: inline-block;
+    margin-top: 21px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    color: #333333;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    padding: 17px 15px;
+}
+
+.flex-center{
+    display: flex;
+    align-items: center;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.one-payment{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex-start{
+    display: flex;
+    justify-content: flex-start;
+}
+.hr-form{
+    margin: 0;
+}
+
+.hr-form textarea{
+    max-width: 700px;
+    height: 174px;
+    border-radius: 4px;
+    border: solid 1px #757575;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before{
+    background-color: #24bb13;
+    border: 0;
+}
+
+.custom-control-label::before,
+.custom-control-label::after{
+    height: 22px;
+    width: 22px;
+}
+
+.custom-control-label::before {
+    background: white;
+    border: solid 1px #757575;
+}
+.programs-all .nav-tabs{
+    border-bottom: none;
+}
+.programs-all .nav-tabs li:last-of-type{
+    margin-left: 40px;
+ }
+
+.programs-all .nav-tabs li a{
+    font-family: Montserrat;
+    font-size: 44px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    color: #a1a1a1;
+
+}
+.programs-all .nav-tabs li a:hover {
+    color:#24bb13;
+}
+.programs-all .nav-tabs li a.active{
+    color: #282828;
+}
+
+.collect-info{
+    padding: 16px 24px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    max-width: 429px;
+}
+.collect-info.extra{
+    max-width: 100%;
+}
+.need-sum-label{
+    margin-bottom: 0px;
+}
+
+.help-block{
+    color:red;
+}
+
+.custom-control-label span {
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.no-margin{
+    margin:0;
+}
+
+.bt-padding{
+    padding-top:80px;
+}
+
+.bb-padding{
+    padding-bottom:80px;
+}
+
+.block-padding{
+    padding-top:80px;
+    padding-bottom: 110px;
+}
+
+.header-margin{
+    margin-bottom: 40px;
+}
+.progress{
+    height: 8px;
+}
+.progress-bar{
+    background-image: linear-gradient(to left, #73db4e, #1db80e);
+    background-color: transparent;
+}
+.extra-program img{
+    width: 100%;
+    object-fit: cover;
+    height: 316px;
+
+}
+.gray-layer{
+    background:linear-gradient(to right, rgba(1,1,1,.0) 30%, rgba(1,1,1,0.5));
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    z-index: 10;
+}
+
+.carousel-control-prev{
+    padding-right: 24px;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    z-index: 100;
+    width: auto;
+}
+
+.control-btn{
+    position: absolute;
+    left: 50%;
+    top: 80px;
+}
+
+.control-btn .carousel-control-prev, .control-btn .carousel-control-next{
+    position: relative;
+}
+
+#social-buttons .fb-share-button{
+    height: 32px;
+    width:164px;
+}
+
+.rw-font{
+    font-family: RawlineMedium;
+}
+.slick-prev.slick-arrow{
+    position: absolute;
+    top: -62px;
+    right: 40px;
+    left: unset;
+}
+.slick-next.slick-arrow{
+    position: absolute;
+    top: -62px;
+    right: 0px;
+    left: unset;
+}
+.slick-next,
+.slick-next:focus{
+    height: 45px;
+    width: 45px;
+    background-image: url('https://ukraine-help.site/index_files/icon/next.svg');
+}
+
+.slick-next:hover{
+    background: unset;
+    background-image: url('https://ukraine-help.site/index_files/icon/next-hover.svg');
+}
+
+.slick-next::before, .slick-prev::before{
+    content: '';
+}
+
+.slick-prev,
+.slick-prev:focus {
+    height: 45px;
+    width: 45px;
+    background-image: url('https://ukraine-help.site/index_files/icon/prev.svg');
+}
+
+.slick-prev:hover{
+    background: unset;
+    background-image: url('https://ukraine-help.site/index_files/icon/prev-hover.svg');
+}
+
+.fb-share{
+    margin-left: 20px;
+    background-image: url('https://ukraine-help.site/index_files/icon/f-share.svg');
+    width: 123px;
+    height: 25px;
+}
+
+.help-form-line{
+    height: 1px;
+    opacity: 0.2;
+    border-bottom: solid 1px #ffffff;
+}
+
+.fb-share:hover{
+    background-image: url('https://ukraine-help.site/index_files/facebook-h.svg');
+}
+
+.slick-prev:active{
+    background-image: url('https://ukraine-help.site/index_files/icon/prev-click.svg');
+}
+.slick-next:active{
+    background-image: url('https://ukraine-help.site/index_files/icon/next-click.svg');
+}
+.extra-padding{
+    padding-right: 56px;
+}
+
+.p-list-descr{
+    padding-left: 50px;
+}
+.flex-icon{
+    padding-left: 24px;
+}
+.help-item .help-item-arrow{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 24px;
+}
+
+.help-item:hover .help-item-arrow{
+    padding-right: 12px;
+}
+.confirm-block{
+    display: none;
+    padding: 15px;
+}
+
+.confirm-block .state{
+    font-weight: bold;
+}
+.request-otp{
+    width: 25px;
+    text-align: center;
+}
+.otp-error{
+    font-weight: bold;
+    color: red;
+}
+@media screen and (min-width: 1280px) {
+    .last_payments, .more-wrap{
+        padding-right: 65px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .container > .row:not(.slider-row), .program-block{
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    h2, .all-donate-sum{
+        font-size: 33px;
+    }
+    .programs-all .nav-tabs, .block-inner-content{
+        padding: 0px 50px;
+    }
+    .header, .footer{
+        padding-left: 50px;
+        padding-right: 50px;
+        margin:0;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .carousel-caption{
+        width: 80%;
+        left:  50px ;
+        top: unset;
+        bottom: 60px;
+        left: unset;
+    }
+
+    .carousel-caption h5{
+        font-size: 40px;
+    }
+
+    .control-btn{
+        position: absolute;
+        top: unset;
+        left:unset;
+        right: 56px;
+        bottom:88px;
+    }
+
+    .donation-block{
+        max-width: 550px;
+        left: 56px;
+        bottom: 70px;
+        height: unset;
+        top:unset;
+        width: auto;
+    }
+}
+@media screen and (max-width: 991px) {
+    .header-nav{
+        margin-top: 35px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .carousel-caption{
+        top: unset;
+        right: unset;
+        left: 50px;
+        bottom: 80px;
+        margin: 0 auto;
+        width: 80%;
+        display: block !important;
+    }
+
+    .control-btn{
+        position: absolute;
+        top:unset;
+        left:10%;
+        bottom:40px;
+    }
+
+    .main-pr-img{
+        height: 400px;
+        margin-bottom: 440px;
+    }
+    .main-pr-img img{
+        height: 400px;
+    }
+
+    .article-header, h2{
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    .article-header.cw{
+        color: black;
+    }
+
+    .donation-block{
+        position: relative;
+        background: white;
+        color:black;
+        padding:40px 50px;
+        top: -80px;
+        margin: 0 auto;
+        right: 0;
+        max-width: 400px;
+        left: unset;
+    }
+
+    .donation-block h2.cw{
+        color: black;
+    }
+    input.donate-sum{
+        max-width: none;
+        width: 100%;
+    }
+    .donate-btn{
+        width: 100%;
+        height: 50px;
+    }
+
+    span.cw{
+        color: black;
+    }
+    span.cw.collected{
+        color: #24bb13;
+    }
+    .fast-sum li{
+        color: #a1a1a1;
+    }
+    .carousel-caption h5{
+        font-size: 30px;
+    }
+    .header-nav{
+        margin-top: 35px;
+    }
+
+    .last_payments, .more-wrap{
+        padding-right: 0;
+    }
+
+    .programs-all ul.nav a {font-size: 28px;}
+    .programs-all .nav-tabs{min-width: 500px;}
+    .programs-all .nav-tabs li:last-of-type{
+        margin-left:20px;
+    }
+
+    .programs-all{
+        overflow: hidden;
+    }
+
+    .flex-end{
+        justify-content: flex-start;
+    }
+    .extra-padding{
+        padding-right: 0px;
+    }
+    .p-list-descr{
+        padding: 0;
+    }
+    /*.ic_army .help_title{
+        height: 40px;
+    }*/
+    .h-form-icon{
+        justify-content: flex-start;
+    }
+    .slick-prev.slick-arrow,
+    .slick-next.slick-arrow{
+        top: -52px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    #carousel-slider{
+        height: 460px;
+    }
+    #carousel-slider .item-source{
+        height: 460px;
+    }
+    .all-donate-sum{
+        font-size: 36px;
+    }
+    .control-btn{
+        position: absolute;
+        top:400px;
+        left: 10%;
+    }
+    .all-donate-sum{
+        font-size: 25px;
+    }
+    .all-donate-sum.ml-4{
+        margin-left: 15px !important;
+    }
+    .footer p.contacts{
+        font-size: 22px;
+    }
+    .block-title.help-title{
+        font-size: 16px;
+    }
+    .flex-icon{display: flex; max-width: 64px;}
+}
+
+@media screen and (max-width: 575px) {
+    .collect-info{
+        background: none;
+        padding-left: 0px;
+    }
+    .collected-sum, .remaining-time{
+        border-radius: 8px;
+        background-color: #ffffff;
+        padding: 16px 24px;
+    }
+    .remaining-time{
+        margin-top:10px;
+    }
+    .one-payment{
+        justify-content: flex-start;
+    }
+}
+.page-link{
+    padding: 0;
+    color: #24BB13;
+}
+.page-link a, .page-link span {
+    min-width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
