@@ -1,0 +1,126 @@
+///////////-----VK-----removed
+/*document.getElementById('vk-share-button').innerHTML = VK.Share.button({
+    url: document.location.href,
+    type: 'round',
+    title:$('.dn_title_state h2').text(),
+    text:'поделиться',
+    description:$('.estab-descr').html(),
+    image:$('.estab-img').prop('src'),
+    noparse:true
+});*/
+//////Facebook
+window.fbAsyncInit = function() {
+    FB.init({
+        appId      : '1641703759375538',
+        xfbml      : true,
+        version    : 'v9.0'
+    });
+};
+
+(function(d, s, id){
+    var lang = $('.current-language').val();
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) {return;}
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/"+lang.replace('ua','uk')+"_"+lang.toUpperCase()+"/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+var Facebook = function(){
+    let fbCount = 0;
+
+    function getCounter(facebook){
+        $.get("https://graph.facebook.com/?id="+document.location.href, function(resp){
+            if ( resp ) {
+                if ( typeof resp.share.share_count != 'undefined' ) {
+                    fbCount = resp.share.share_count;
+                    $('.fb-share-button .fb-count').text(resp.share.share_count);
+                } else
+                    $('.fb-share-button .fb-count').text('0');
+            }
+        })
+    }
+
+    this.init = function(){
+        getCounter(this)
+    };
+
+    this.postToFeed = function() {
+        let news = location.pathname.match(/^\/(ua|ru)?\/?news\/\d+$/);
+
+        let name, descr, image ='';
+
+        if ( !news ) {
+            name  =  $('h2.cw').text();
+            descr = $('.estab-descr').text();
+            image = $('.estab-img').prop('src');
+        }
+
+        if( news ) {
+            name  =  $('.repHead h3').text();
+            descr = $('.news-descr').text();
+            image = "https://blago.privatbank.ua/media/files/blago_social.jpg"
+        }
+
+        // calling the API ...
+        let obj = {
+            method: 'feed',
+            link: document.location.href,
+            redirect_uri: document.location.href,
+            picture: image,
+            name: name,
+            description: descr
+        };
+
+        function callback(response) {
+            if ( response )
+                document.getElementById('msg').innerHTML = "Post ID: " + response['post_id'];
+        }
+
+        FB.ui(obj, callback);
+    }
+};
+
+var facebook = new Facebook();
+facebook.init();
+
+//////Twitter
+window.twttr = (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://platform.twitter.com/widgets.js";
+    fjs.parentNode.insertBefore(js, fjs);
+
+    t._e = [];
+    t.ready = function(f) {
+        t._e.push(f);
+    };
+
+    return t;
+}(document, "script", "twitter-wjs"));
+
+function twitterInit()
+{
+    var news = location.pathname.match(/^\/(ua|ru)?\/?news\/\d+$/);
+    if(news)
+        name = $('.repHead h3').text();
+    else name = $('.dn_title_state h2').text()
+
+    if(typeof twttr.widgets != 'undefined')
+    {
+        twttr.widgets.createShareButton(
+            document.location.href,
+            document.getElementById('tw-share-button'),
+            {
+                count: 'horizontal',
+                text: name
+            }).then(function (el) {
+                console.log("Button created.")
+            });
+    } else setTimeout(twitterInit, 100);
+}
+
+twitterInit();
