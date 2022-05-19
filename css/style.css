@@ -56,13 +56,13 @@ header{
 }
 .nav p{
   padding-left: 20px;
-  background: url("/img/key.png") left no-repeat;
+  background: url("img/key.png") left no-repeat;
   background-size: cover;
   background-size: 16px;
 }
 .main__title p{
   padding-left: 20px;
-  background: url("/img/key.png") left no-repeat;
+  background: url("img/key.png") left no-repeat;
   background-size: cover;
   background-size: 20px;
   display: none;
