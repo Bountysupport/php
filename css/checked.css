@@ -1,0 +1,42 @@
+.main__checkbox {
+    margin-top: 20px;
+}
+
+.checkbox {
+    appearance: none;
+    position: absolute;
+}
+
+.span {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: gray;
+    border-radius: 25%;
+}
+.saved_check{
+    max-width: 150px;
+    width: 150px;
+    display: flex;
+}
+
+.saved_check,
+.saved_card{
+    display: flex;
+    align-items: center;
+    max-width: 150px;
+    width: 140px;
+    height: 20px;
+    padding-left: 25px;
+}
+input:checked~span {
+    background: url("/img/mark.png") center no-repeat;
+    background-size: 10px;
+    background-color: #ffdd2d;
+    transition: .5s;
+}
+
+.label_down {
+    margin-top: 20px;
+    display: flex;
+}
