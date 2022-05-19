@@ -30,7 +30,7 @@
     padding-left: 25px;
 }
 input:checked~span {
-    background: url("/img/mark.png") center no-repeat;
+    background: url("img/mark.png") center no-repeat;
     background-size: 10px;
     background-color: #ffdd2d;
     transition: .5s;
